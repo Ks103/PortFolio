@@ -1,0 +1,227 @@
+
+
+
+::before,::after{
+    box-sizing: border-box;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+
+/* Navbar */
+.navbar{
+    width: 270px;
+    background: var(--bg-black-100);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    border-right: 1px solid var(--bg-black-50);
+    transition: all 0.5s ease;
+}
+
+.navbar .logo{
+    /* border: 5px solid red; */
+    position: absolute;
+    top: 50px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.navbar .logo a{
+    color: var(--text-black-900);
+    font-weight: 700;
+    /* background: red; */
+    padding: 15px 20px;
+    font-size: 16px;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.navbar .logo a span{
+    /* font-family: 'Poppins'; */
+    color:var(--skin-color);
+    /* font-family: 40px; */
+    font-size: 20px;
+    /* font-size: smaller; */
+    /* font-weight: bold; */
+}
+
+.navbar .logo a::before{
+    content: '';
+    position:absolute;
+    width: 30px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    /* border: 5px solid green; */
+    bottom: 0;
+    left: 0;
+}
+.navbar .logo a::after{
+    content: '';
+    position:absolute;
+    width: 30px;
+    height: 20px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    /* border: 5px solid green; */
+    top: 0;
+    right: 0;
+}
+
+.navbar .nav_toggle{
+    height: 45px;
+    width: 45px;
+    border: 1px solid var(--bg-black-50);
+    cursor: pointer;
+    position: fixed;
+    left: 30px;
+    top:30px;
+    border-radius: 5px;
+    background: var(--bg-black-100);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.navbar .nav_toggle span{
+    /* content:" "; */
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    display: inline-block;
+    position: relative;
+}
+.navbar .nav_toggle.open_toggle span{
+    background-color: transparent;
+}
+.navbar .nav_toggle span::before{
+    content: " ";
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top:-6px;
+    left:0px;
+    /* z-index: 10; */
+}
+.navbar .nav_toggle.open_toggle span::before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+.navbar .nav_toggle span::after{
+    content: " ";
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top:6px;
+    left:0px;
+}
+.navbar .nav_toggle.open_toggle span::after{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.navbar .nav{
+    margin-top: 50px;
+    /* display: block; */
+    /* border: 2px solid red; */
+}
+
+.navbar .nav li{
+    margin-bottom: 20px;
+    /* background: red; */
+    display: block;
+}
+
+.navbar .nav li a:hover{
+    color:var(--skin-color);
+    /* background-color: green; */
+}
+
+.navbar .nav li a.unhover{
+    color: var(--text-black-900);
+}
+
+.navbar .nav li a{
+    font-size: 14px;
+    font-weight: 900;
+    display: block;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-self: center; */
+    /* align-content: center; */
+    color: var(--text-black-900);
+    padding: 5px 5px;
+    border-bottom: 2px solid var(--bg-black-50);
+}
+
+.navbar .nav li a.active{
+    color:var(--skin-color);
+}
+
+.navbar .nav li a i{
+    margin-right: 15px;
+}
+
+/* 
+.navbar .resume{
+    position: fixed;
+    bottom:50px;
+    background-color:var(--bg-black-900);
+    border: 0px;
+}
+
+.navbar .resume:hover{
+    background-color: var(--bg-hover);
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.navbar .resume li a{
+    font-size: 20px;
+    font-weight: 800;
+    display: block;
+    color: var(--text-black-900);
+    padding: 5px 5px;
+    border-top: 2px solid var(--bg-black-50);
+    border-bottom: 2px solid var(--bg-black-50);
+}
+
+.navbar .resume li a:hover{
+    color: var(--skin-color);
+}
+.navbar .resume li a.active{
+    color: var(--skin-color)
+    
+}
+
+.navbar .resume li a i{
+    margin-right: 15px;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

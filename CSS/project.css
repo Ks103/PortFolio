@@ -1,0 +1,96 @@
+.project .container{
+    padding-bottom: 20px;
+}
+
+.project .project-item{
+    margin-bottom: 30px;
+    flex: 0 0 51%;
+    max-width: 51%;
+}
+
+.project .project-item .project-item-inner{
+    background-color: var(--bg-black-100);
+    border:1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.project .project-item .project-item-inner a{
+    background-image: linear-gradient(to right, var(--skin-color) 50%, var(--text-bg-black-900) 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.project .project-item .project-item-inner a:before{
+    content: '';
+    background: var(--skin-color);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+  
+.project .project-item .project-item-inner a:hover {
+   background-position: 0;
+}
+  
+.project .project-item .project-item-inner a:hover::before{
+    width: 100%;
+}
+
+.project .project-item .project-item-inner:hover{
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+
+.project .project-item .project-item-inner .icon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.project .project-item .project-item-inner .icon .fa{
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--skin-color);
+    transition: all 0.3s ease;
+
+}
+
+.project .project-item .project-item-inner:hover .icon{
+    background-color: var(--skin-color);
+}
+
+.project .project-item .project-item-inner:hover .fa{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.project .project-item .project-item-inner h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-bg-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+
+}
+
+.project .project-item .project-item-inner p{
+    font-size: 16px;
+    color: var(--text-black-700);
+    line-height: 25px;
+}

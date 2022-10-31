@@ -1,0 +1,105 @@
+.achievement .achievement-heading{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.achievement .achievement-heading h2{
+    color: var(--text-bg-black-900);
+    font-weight: 500;
+}
+
+
+.achievement .achievement-item{
+    margin-bottom: 30px;
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.achievement .achievement-item .achievement-item-inner{
+    background-color: var(--bg-black-100);
+    border:1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.achievement .achievement-item .achievement-item-inner a{
+    background-image: linear-gradient(to right, var(--skin-color) 50%, var(--text-bg-black-900) 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.achievement .achievement-item .achievement-item-inner a:before{
+    content: '';
+    background: var(--skin-color);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+  
+.achievement .achievement-item .achievement-item-inner a:hover {
+   background-position: 0;
+}
+  
+.achievement .achievement-item .achievement-item-inner a:hover::before{
+    width: 100%;
+}
+  
+
+
+.achievement .achievement-item .achievement-item-inner:hover{
+    box-shadow: 0 0 20px rgba(14, 13, 20, 0.15);
+}
+
+.achievement .achievement-item .achievement-item-inner .icon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.achievement .achievement-item .achievement-item-inner .icon .fa{
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--skin-color);
+    transition: all 0.3s ease;
+
+}
+
+.achievement .achievement-item .achievement-item-inner:hover .icon{
+    background-color: var(--skin-color);
+}
+
+.achievement .achievement-item .achievement-item-inner:hover .fa{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.achievement .achievement-item .achievement-item-inner h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-bg-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+
+}
+
+.achievement .achievement-item .achievement-item-inner p{
+    font-size: 16px;
+    color: var(--text-black-700);
+    line-height: 25px;
+}
